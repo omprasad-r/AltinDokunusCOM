@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+    </style>
+}
+
+
+@section title{
+    Comment protéger votre chien ?
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish4">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <p class="rappel_title">
+                La Leishmaniose
+            </p>
+            <h2>Comment protéger votre chien ?</h2>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 content-text">
+            <h3>Comment protéger votre chien ?</h3>
+
+            <p>
+                La prévention de la leishmaniose canine est essentielle dans les zones à risque de piqûres par les 	phlébotomes, entre mars et novembre selon les années. Elle concerne aussi bien les chiens résidant sur place que les chiens qui s’y rendent au cours des vacances d’été.
+                Les mesures suivantes contribuent à prévenir l’infection du chien, en limitant l’exposition aux piqûres :<br />
+                <b>• Traiter le chien avec un insecticide topique rémanent, à action répulsive sur les phlébotomes</b>. Actuellement, seules les molécules de la famille des pyréthroïdes (ex. perméthrine, deltaméthrine) présentent ces propriétés. Par exemple, <b>les colliers imprégnés de deltaméthrine (Scalibor®)</b> possèdent une action répulsive contre les phlébotomes à partir d’une semaine après la pose, et pendant 5 mois ;<br />
+                <b>• Garder le chien à l’intérieur dès le crépuscule</b> et la nuit, pendant la saison à risque ;<br />
+                • Réduire les micro-habitats propices aux phlébotomes, autour de la maison et dans les lieux fréquentés par le chien ;<br />
+                • Utiliser un traitement insecticide domestique (type « anti-moustiques ») dans les locaux d’habitation.<br /><br />
+
+                <img class="img-responsive" src="~/Content/theme/images/schema_leish6.jpg" /><br />
+
+                Depuis 2011, Il existe également en Europe un <b>vaccin contre la leishmaniose canine</b>, qui permet d’augmenter la résistance du chien à l’infection. La vaccination doit permettre de réduire le risque de développer une infection active et une maladie clinique, après un contact avec le parasite.<br />
+                Pour toute question sur la vaccination contre la leishmaniose canine, demandez conseil à votre vétérinaire.
+            </p>
+        </div>
+                
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

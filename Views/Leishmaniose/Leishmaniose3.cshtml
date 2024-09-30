@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+    </style>
+}
+
+
+@section title{
+    Où est-elle présente ?
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish3">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <h1 class="rappel_title">
+                Où la leishmaniose est-elle présente ?
+            </h1>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="img-responsive" src="~/Content/theme/images/leis_img_2.jpg" alt="leishmaniose europe leishmaniose méditerranée" />
+                </div>
+                <div class="col-md-7 content-text">
+                    <p>
+                        MERCK La leishmaniose canine sévit particulièrement dans tout le Bassin méditerranéen, en particulier dans le <b>Sud de l’Europe</b> (Sud de la France, Espagne, Portugal, Italie, Grèce). Elle présente une dynamique active d’extension du bassin méditerranéen vers le Nord de l’Europe.<br /><br />
+
+                        En France, la leishmaniose canine est principalement localisée dans les régions au <b>climat méditerranéen, des Pyrénées-Orientales jusqu’à la Côte d’Azur et la Corse, en passant par merck les Cévennes et la Provence</b>. La zone correspond à peu près à la zone de répartition du vecteur, le phlébotome. La maladie est en progression dans toute la France, avec une présence dans au moins 25 départements, soit près de 20% du territoire. Actuellement on note une <b>dynamique active d’extension</b> de la maladie vers le Sud-Ouest, le Nord-Ouest et le Nord.
+                    </p>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

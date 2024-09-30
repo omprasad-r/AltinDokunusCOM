@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+    </style>
+}
+
+
+@section title{
+    Qu'est-ce que c'est ?
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish1">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <h1 class="rappel_title">
+                Qu'est-ce que la leishmaniose ?
+            </h1>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="~/Content/theme/images/leis_img_1.jpg" alt="maladie leishmaniose" />
+                </div>
+                <div class="col-md-8 content-text">
+                    <p>
+                        La leishmaniose est <b class="yellow">une maladie parasitaire chronique, grave</b> qui touche principalement le chien. En France métropolitaine comme dans tout le Bassin méditerranéen, elle est due à un parasite de très petite taille, Leishmania infantum, également responsable de la leishmaniose humaine.<br />
+                        <br />
+                        Cette maladie est une <b>zoonose sévère</b>, c’est-à-dire une maladie transmissible naturellement de l'animal à l'homme et inversement. Le chien est le principal réservoir pour l'infection humaine.<br />
+                        Chez l’homme comme chez le chien, lorsque la maladie se déclare, elle peut être <b class="yellow">fatale en l’absence de traitement</b>. Pour la petite histoire, la leishmaniose canine a été décrite pour la première fois à Tunis, au début du siècle dernier (1908).<br />
+                        <br />
+                        <b>La prévalence globale nationale</b> de la leishmaniose canine est en moyenne de 4,1 cas pour 1000, soit environ <b class="yellow">40 000 cas cliniques par an</b> (selon les données 2011). Elle est très supérieure à celle de la leishmaniose humaine.
+                    </p>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

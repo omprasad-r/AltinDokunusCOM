@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "notFound";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+@section addStyle{
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+}
+
+@section title{
+    Belge bulunamadı
+}
+
+@section main{
+
+    <div style="margin 0 auto; width 75%;">
+        <h1>Belge bulunamadı</h1>
+        <br />
+        <p>Üzgünüz, aradığınız belge mevcut değil.</p>
+        <p>Lütfen istenen adresi kontrol edin</p>
+        <p>Gezinme Seçenekleri:<p>
+            <ul>
+                <li><a href="/">ANA SAYFA</a></li>
+                <li><a onclick="goBack()">SAYFAYA DÖN</a></li>
+                <li>MSD Hayvan Sağlığı, Dünya Genelindeki müşterilerimize ve ortaklarımıza yardım etmeye yönelik 300'den fazla web sitesi işletmektedir. MSD Hayvan Sağlığı sitelerinin bir listesi için lütfen <a href="http://www.merck-animal-health.com/">MERCK-ANIMAL-HEALTH.COM WEB SİTESİNİ ziyaret edin.</a></li>
+            </ul>
+            Belge Durumu: Bulunamadı(404)
+        </p>
+    </div>
+
+}
+
+@section articleLinks{
+
+}
+

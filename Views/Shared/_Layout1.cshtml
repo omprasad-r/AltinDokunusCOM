@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@RenderSection("title")</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/theme/base/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/base/style1.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/base/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!--YouTube metatag-->
+    <meta name="google-site-verification" content="5K3uS_OgP0Vmf7QCPVKq512ErYaQzXBmsREudjrEFJg" />
+    <!--YouTube metatag-->
+
+   
+
+    @RenderSection("addStyle")
+
+    <style>
+        @@media screen and (min-width: 980px) /* Desktop */ {
+            #menu {
+                width: 110%;
+                margin-left: -10%;
+            }
+        }
+
+        @@media screen and (max-width: 979px) /* Tablet */ {
+            #menu {
+                width: 110%;
+                margin-left: -4%;
+            }
+        }
+
+        @@media screen and (max-width: 500px) /* Mobile */ {
+            #menu {
+                width: 110%;
+                margin-left: -4%;
+            }
+        }
+
+        @@media screen and (min-width: 980px) /* Desktop */ {
+            .footer-details {
+                width: 185%;
+                margin-left: -50%;
+            }
+        }
+
+        @@media screen and (max-width: 979px) /* Tablet */ {
+            .footer-details {
+                width: 100%;
+            }
+        }
+
+        @@media screen and (max-width: 500px) /* Mobile */ {
+            .footer-details {
+                width: 100%;
+            }
+        }
+
+        @@media screen and (min-width: 980px) /* Desktop */ {
+            .wrapper {
+                width: 60.8%;
+                margin: 0 auto;
+                background-color: white;
+                -moz-box-shadow: 10px 10px 5px #888;
+                -webkit-box-shadow: 10px 10px 5px #888;
+                box-shadow: 0px 6px 23px 0px #888;
+            }
+        }
+
+        @@media screen and (max-width: 979px) /* Tablet */ {
+            .wrapper {
+                width: 100%;
+                background-color: white;
+            }
+        }
+
+        @@media screen and (max-width: 500px) /* Mobile */ {
+            .wrapper {
+                width: 100%;
+                background-color: white;
+            }
+        }
+    </style>
+   
+
+
+	<script type="text/plain" class="optanon-category-C0003-C0004" src="https://www.googletagmanager.com/gtag/js?id=G-YNJQL6EFR3"></script>
+	<script type="text/plain" class="optanon-category-C0003-C0004">
+		window.dataLayer = window.dataLayer || [];
+		function gtag()
+		{dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag("config", "G-YNJQL6EFR3");
+		gtag("config", "G-CZE31BL588");
+	</script>
+
+
+</head>
+<body style="background-color: #e4e4e4;">
+    <div class="wrapper">
+        <header>
+            @RenderPage("~/Views/Shared/_Header.cshtml")
+        </header>
+        <div id="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderSection("main")
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub">
+            <div class="container-fluid">
+                <div class="row linksBottom">
+                    <div class="col-md-12 text-center">
+                        @RenderSection("articleLinks")
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderPage("~/Views/Shared/_Footer.cshtml")
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="~/Content/theme/base/bootstrap.min.js"></script>
+        <script type="text/javascript" src="~/Content/theme/base/global.js"></script>
+
+    </div>
+    
+</body>
+</html>

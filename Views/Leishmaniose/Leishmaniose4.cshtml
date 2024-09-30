@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+    </style>
+}
+
+
+@section title{
+    Quels sont les signes cliniques ?
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish3">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <h1 class="rappel_title">
+                Quels sont les signes cliniques chez le chien de la leishmaniose ?
+            </h1>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 content-text">
+            
+
+            <p>
+                Tous les chiens infectés ne développent pas la maladie (1 chien malade pour 3 à 5 chiens infectés par le parasite).<b>L’incubation de la maladie peut être très longue</b>, de plusieurs mois à plusieurs années. Les animaux les plus sensibles déclenchent la maladie dans les mois qui suivent l’infection par la piqûre du phlébotome. D’autres resteront porteurs du parasite pendant plusieurs années et ne deviendront cliniquement malades qu’en vieillissant ou à l’occasion de stress divers.
+                <b>L’expression clinique de la leishmaniose est très variée</b>, car c’est une maladie générale polymorphe qui peut atteindre tous les organes, tissus ou fluides de l’organisme, et les signes cliniques ne sont pas spécifiques.<br />
+                <b>Dans sa forme classique, les principaux signes cliniques sont :</b><br />
+                <br />
+                <img class="img-responsive" src="~/Content/theme/images/schema_leish4.jpg" alt="signes cliniques2" /><br />
+                <b class="yellow">Le diagnostic de certitude sur la clinique seule est difficile.</b> Des examens complémentaires et <b>des analyses de laboratoire (examens biologiques, mise en évidence du parasite chez le chien, examens sérologiques…) sont nécessaires</b> pour confirmer la suspicion clinique et établir le degré de gravité (de I léger à IV très sévère).
+            </p>
+        </div>       
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+    </style>
+}
+
+
+@section title{
+    Comment la traiter ?
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish4">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <h1 class="rappel_title">
+                Comment traiter et protéger votre animal contre la leishmaniose ?
+            </h1>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 content-text">
+            
+            <p>
+                L’évaluation du stade de la maladie conduit à l’établissement du pronostic et au choix du 	traitement spécifique à mettre en place.<br />
+                Le traitement de la leishmaniose canine est long, difficile, souvent contraignant et plus ou moins 	bien toléré. En effet, le traitement de consensus associe deux médicaments, un par voie injectable et un par voie orale, à administrer quotidiennement sur de longues périodes.<br />
+                Généralement ils permettent juste de contrôler les signes cliniques mais pas de guérir le chien en le débarrassant complètement du parasite. Enfin les rechutes sont fréquentes (6 mois à 2 ans).Un suivi du chien traité est ensuite mis en place, avec des évaluations régulières cliniques et biologiques tout au long de sa vie.<br />
+                <b class="yellow">Dans ces conditions, on voit que la prévention de la leishmaniose est une approche essentielle</b><br />
+                <img class="img-responsive" src="~/Content/theme/images/schema_leish5.jpg" alt="Altın Dokunuş" />
+            </p>
+        </div>
+
+       
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

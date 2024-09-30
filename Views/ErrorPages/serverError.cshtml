@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "serverError";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+}
+
+@section title{
+    Dahili Servis Hatası
+}
+
+@section main{
+    <div style="margin 0 auto; width 75%;">
+        <h1>Dahili Servis Hatası</h1>
+        <br />
+        <p>Malesef, teknik bir sorun istediğiniz bilgileri size göstermemizi engelliyor.</p>
+        <p>Gezinme Seçenekleri:<p>
+            <ul>
+                <li><a href="/">ANA SAYFA</a></li>
+                <li><a onclick="goBack()">SAYFAYA DÖN</a></li>
+            </ul>
+            Belge Durumu: Bulunamadı(500)
+        </p>
+    </div>
+}
+
+@section articleLinks{
+
+}
+

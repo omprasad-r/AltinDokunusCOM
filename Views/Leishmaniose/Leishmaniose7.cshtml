@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+        .col-md-8 {
+    width:100%;
+}
+    </style>
+}
+
+
+@section title{
+    Patientez encore un peu !
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish1">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <h1 class="rappel_title">
+                Scalibor à la TV et sur Internet
+            </h1>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">                
+                <div class="col-md-8 content-text">
+                    <h2>La campagne TV</h2>
+                    <p>Dès le printemps, retrouver Scalibor sur les écrans publicitaires.</p>
+                   
+                    
+                    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/LC26R-Jw4d0?list=PL2nu9Bhm9yRgo6ULV__03SElOzT-CV3qA" frameborder="0" allowfullscreen></iframe>
+                    <h2>Les réseaux sociaux</h2>
+                    <p>
+                        Découvrez notre campagne télévisée. Pour rester informés, suivez-nous sur notre chaîne Youtube ou sur notre page Facebook.
+                        <ul>
+                            <li><a href="https://www.youtube.com/playlist?list=PL2nu9Bhm9yRgo6ULV__03SElOzT-CV3qA" target="_blank">notre chaîne Youtube</a></li>
+                            <li><a href="https://www.facebook.com/sante.chien.chat/?fref=ts" target="_blank">notre page Facebook</a></li>
+                        </ul><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

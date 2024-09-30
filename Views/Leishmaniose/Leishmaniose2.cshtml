@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+    </style>
+}
+
+
+@section title{
+    Comment se transmet-elle ?
+}
+
+@section main{
+    <h1>La Leishmaniose</h1>
+    <div class="row bann leish2">
+        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+            <h1 class="rappel_title">
+                Comment se transmet la leishmaniose chez le chien ?
+            </h1>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 content-text">
+            
+            <p>
+                La leishmaniose est essentiellement transmise au chien et à l’homme par <b class="yellow">voie vectorielle</b>, lors de la piqûre d’un minuscule insecte volant et velu (de 2 à 4 mm), appelé phlébotome (voir photo 1). Cet insecte est le seul vecteur biologique du parasite Leishmania infantum en France.
+                Les leishmanies sont transmises au chien au cours d’un repas de sang des <b>phlébotomes</b> femelles, ce repas étant indispensable à leur reproduction. <br />
+                <br />
+                <img class="img-responsive" src="~/Content/theme/images/schema_leish2.jpg" alt="mode transmission leishmaniose" /><br />
+                <b>Les phlébotomes sont largement répandus sur tout le pourtour méditerranéen</b>, une grande partie de l’Afrique et le Moyen-Orient. <b>En France, deux espèces ont un rôle prépondérant dans la transmission de la maladie : <i>Phlebotomus perniciosus et Phlebotomus ariasi.</i></b><br /><br />
+                <b>La répartition géographique</b> des phlébotomes, notamment P. perniciosus, s’est récemment étendue de la zone méditerranéenne à de nouvelles régions d’Europe comme l’Italie du Nord, la Suisse et le Sud de l’Allemagne. <b>En France, son aire de distribution s’accroit vers le Nord</b> (vallée du Rhône) et vers le Sud-Ouest (vallée du Lot).<br />
+                <b>La période d’activité des phlébotomes est dépendante de nombreux facteurs</b> : température, vent, heure. L’activité est maximale à la tombée du jour et à des températures minimales de 18-22°C.<br /> <b>La saison d’activité va de juin à septembre, voire de mars à novembre</b> si les conditions de température sont favorables (ex. Sud de la France), et les piqûres ont lieu plutôt en fin de journée. La transmission des leishmanies est maximale en fin d’été, début d’automne dans nos régions à climat tempéré.
+            </p>
+        </div>        
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+

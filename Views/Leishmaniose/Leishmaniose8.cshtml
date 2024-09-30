@@ -1,0 +1,112 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section addStyle{
+    <link href="~/Content/colorbox.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/Content/jquery.colorbox.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".youtube").colorbox({ iframe: true, innerWidth: 640, innerHeight: 390 });
+            $(".callbacks").colorbox({
+                onOpen: function () { alert('onOpen: colorbox is about to open'); },
+                onLoad: function () { alert('onLoad: colorbox has started to load the targeted content'); },
+                onComplete: function () { alert('onComplete: colorbox has displayed the loaded content'); },
+                onCleanup: function () { alert('onCleanup: colorbox has begun the close process'); },
+                onClosed: function () { alert('onClosed: colorbox has completely closed'); }
+            });
+            $("#click").click(function () {
+                $('#click').css({ "background-color": "#f00", "color": "#fff", "cursor": "inherit" }).text("Open this window again and this message will still be here.");
+                return false;
+            });
+        });
+    </script>
+    <style>
+        .container-fluid {
+            background: transparent;
+        }
+
+        .d-table {
+            display: table;
+            table-layout: fixed;
+            height: 100%;
+            width: 60%;
+            margin-left: 25%;
+        }
+
+        .d-row {
+            display: table-row;
+        }
+
+        .d-cell {
+            display: table-cell;
+        }
+
+        .first {
+            width: 50%;
+        }
+
+        .second {
+            padding-top: 5%;
+            width: 50%;
+        }
+    </style>
+}
+
+
+@section title{
+    Meilleur ami
+}
+
+@section main{
+
+    <div class="videosDiv">
+
+        <div class="col-md-12 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+
+        </div>
+        <img class="img-responsive" src="~/Content/theme/images/SliderScalibor.png" style="padding-top: 7%;" />
+    </div>
+
+
+    <div class="row ">
+        <div class="col-md-9 col-sm-12 col-xs-12" style="width:100%;">
+            <div class="row videosDiv">
+                <div class=" embed-container">
+                    <iframe width="431" height="241" src="https://www.youtube-nocookie.com/embed/UxVm6OU0Df0" frameborder="0" allowfullscreen></iframe>
+                    <p class="videosText">Marc et Bonbon</p>
+                </div>
+            </div>
+            <div class="row videosDiv">
+                <div class=" embed-container">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/shPE4FqTqTI" frameborder="0" allowfullscreen></iframe>  
+                   
+                    <p class="videosText">Monica et Bruna</p>
+                </div>
+            </div>
+            <div class="row videosDiv">
+                <div class=" embed-container">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xsRtP0cFT74" frameborder="0" allowfullscreen></iframe>
+                   
+                    <p class="videosText">La famille Scalibor</p>
+                </div>
+            </div>
+            <div class="row videosDiv">
+                <div class=" embed-container">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jog-QQdiYOQ" frameborder="0" allowfullscreen></iframe>
+                    <p class="videosText">Antonia et Rosita</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+}
+
+
+@section articleLinks{
+    @RenderPage("~/Views/Shared/_bottomleish.cshtml")
+}
+
